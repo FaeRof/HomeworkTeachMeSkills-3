@@ -10,16 +10,16 @@ public class TwoDimensionalMassMultiply {
 
         System.out.println("Введите размерость матрицы А:");
         int aLine = scanner.nextInt();
-        int aColumns = scanner.nextInt();
+        int aColumn = scanner.nextInt();
 
         System.out.println("Введите размерость матрицы B:");
         int bLine = scanner.nextInt();
-        int bColumns = scanner.nextInt();
+        int bColumn = scanner.nextInt();
 
-        if (aColumns == bLine){
-            int a[][] = new int[aLine][aColumns];
-            int b[][] = new int[bLine][bColumns];
-            int x[][] = new int[aLine][bColumns];
+        if (aColumn == bLine){
+            int a[][] = new int[aLine][aColumn];
+            int b[][] = new int[bLine][bColumn];
+            int x[][] = new int[aLine][bColumn];
 
             System.out.println("Введите элементы матрицы А");
             for (int i = 0; i < a.length; i++) {
